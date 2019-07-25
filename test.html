@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="layDate-v5.0.9/laydate/laydate.js"></script>
+        <script>
+            lay('#version').html('-v' + laydate.v);
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#date'//指定元素,即你要输入的框的id号即可
+            });
+        </script>
+        <input type="text" name="date" class="date" id="date">
+</body>
+</html>
